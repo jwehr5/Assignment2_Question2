@@ -20,7 +20,10 @@ double NonProfessionalEmployee::calculateHealthCare() {
 
 int NonProfessionalEmployee::calculateVacationDays() {
 
-	//For every 8 hours, 1 vacation day is earned.
+	/*
+	* For every 8 hours, 1 vacation day is earned.
+	* The number is rounded down, so someone who works 45 hours will still get 5 vacation days.
+	*/
 	return hoursWorked / 8;
 }
 
