@@ -1,3 +1,8 @@
+/*
+	Jayden Wehr
+	main.cpp
+*/
+
 #include <iostream>
 #include "Employees.h"
 using namespace std;
@@ -10,7 +15,7 @@ int main() {
 	Employee* e1 = new NonProfessionalEmployee(40, 28.24);
 	cout << "Weekly salary is: $" << e1->calculateWeeklySalary() << " [Should be $1129.6]" << endl;
 	cout << "The amount from their weekly pay that go towards health care contributions is: $" << e1->calculateHealthCare() << " [Should be $112.96]" << endl;
-	cout << "The number of vacation days for a given week is: " << e1->calculateVacationDays() << " [Should be 5]" << endl;
+	cout << "The number of vacation days earned from this week is: " << e1->calculateVacationDays() << " [Should be 5]" << endl;
 
 	cout << endl;
 
@@ -18,7 +23,7 @@ int main() {
 	Employee* e2 = new NonProfessionalEmployee(47, 26.30);
 	cout << "Weekly salary is: $" << e2->calculateWeeklySalary() << " [Should be $1236.1]" << endl;
 	cout << "The amount from their weekly pay that go towards health care contributions is: $" << e2->calculateHealthCare() << " [Should be $123.61]" << endl;
-	cout << "The number of vacation days for a given week is: " << e2->calculateVacationDays() << " [Should be 5]" << endl;
+	cout << "The number of vacation days earned from this week is: " << e2->calculateVacationDays() << " [Should be 5]" << endl;
 
 	cout << endl << endl;
 
@@ -28,7 +33,7 @@ int main() {
 	Employee* e3 = new ProfessionalEmployee(1156.40);
 	cout << "Weekly salary is: $" << e3->calculateWeeklySalary() << " [Should be $289.1]" << endl;
 	cout << "The amount from their weekly pay that go towards health care contributions is: $" << e3->calculateHealthCare() << " [Should be $57.82]" << endl;
-	cout << "The number of vacation days for a given week is: " << e3->calculateVacationDays() << " [Should be 12]" << endl;
+	cout << "The number of vacation days for this Professional Employee is: " << e3->calculateVacationDays() << " [Should be 12]" << endl;
 
 	delete e1;
 	delete e2;
